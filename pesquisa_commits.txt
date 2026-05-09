@@ -1,0 +1,43 @@
+PESQUISA: Padrão Conventional Commits
+
+O que é o padrão Conventional Commits?
+
+Conventional Commits é uma convenção para escrever mensagens de commit de forma
+padronizada e legível. A ideia é simples: toda mensagem de commit segue uma
+estrutura fixa — tipo, escopo opcional e descrição. Isso facilita entender o
+histórico do projeto só de olhar as mensagens, além de permitir geração automática
+de changelogs e versionamento semântico. É muito usado em projetos profissionais e
+open source porque deixa tudo mais organizado e comunicativo entre os membros da equipe.
+
+O formato básico é:
+  <tipo>[escopo opcional]: <descrição curta>
+
+Exemplo:
+  feat(login): adicionar autenticação com Google
+
+
+Significado dos prefixos:
+
+
+feat
+  Usado quando você está adicionando uma funcionalidade nova ao projeto.
+  Exemplo: feat: criar página de cadastro de usuários
+
+fix
+  Usado quando você corrige um bug ou erro que estava acontecendo.
+  Exemplo: fix: corrigir botão de envio que não funcionava no mobile
+
+docs
+  Usado quando a mudança é apenas na documentação, sem alterar código funcional.
+  Exemplo: docs: adicionar instruções de instalação no README
+
+style
+  Usado para mudanças que não afetam a lógica do código, apenas a aparência ou
+  formatação — como ajuste de indentação, espaçamento, cores no CSS ou ponto e vírgula.
+  Exemplo: style: ajustar espaçamento entre elementos do menu
+
+refactor
+  Usado quando você reorganiza ou melhora o código internamente, sem adicionar
+  funcionalidade nova nem corrigir bug. O comportamento continua igual, mas o
+  código fica mais limpo ou eficiente.
+  Exemplo: refactor: extrair lógica de validação para função separada 
