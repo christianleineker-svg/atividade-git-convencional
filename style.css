@@ -1,17 +1,62 @@
-h1 {
-    color: rgb(8, 8, 196);
-    text-decoration-style: solid;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: #1a1a2e;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #e0e0e0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 nav ul {
-    padding: -400px -16px;
-    cursor: pointer;
-    color: rgb(253, 8, 8);
-    border: none;
-    border-radius: 5px;
-    text-shadow: 1px 1px 2px rgb(90, 5, 5);
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  color: #a0c4ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+main {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+main p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  font-size: 0.85rem;
+  color: #999;
 }
